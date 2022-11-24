@@ -49,7 +49,7 @@ def approx(f, x, y, n):
     return [[lb + j * h for j in range(n)], [f(lb + i * h, *(__ for __ in args)) for i in range(n)]]
 
 
-maxsize = 10000000
+maxsize = 1000000
 repeat_times = 7
 num_measurements = 10
 max_lengths = [maxsize, math.ceil(math.sqrt(maxsize)), math.ceil(math.pow(maxsize, 1 / 3))]
